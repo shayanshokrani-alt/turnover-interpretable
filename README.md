@@ -5,33 +5,33 @@ real data:
 
 > Does how an employee *experiences* the job (satisfaction, work–life balance,
 > overtime, involvement) add predictive value for turnover over who they are on
-> paper (age, role, pay, distance) — and which of those experience factors are
+> paper (age, role, pay, distance)  and which of those experience factors are
 > the **stable, trustworthy** drivers of attrition?
 
 The emphasis is interpretability, not leaderboard accuracy. The model is a
 penalized logistic regression whose coefficients map directly to odds ratios a
 manager can read, and the project reports not just which features matter but how
-**stable** each effect is across cross-validation folds — because a coefficient
+**stable** each effect is across cross-validation folds because a coefficient
 you can't reproduce is not something an organization should act on.
 
 ## What it does
 
-1. **Incremental value** — compares a baseline (demographic/structural) model
+1. **Incremental value** compares a baseline (demographic/structural) model
    against baseline + experience layer, by cross-validated AUC **and PR-AUC**
    (the classes are imbalanced at 16%), with a **paired t-test and 95%
    confidence intervals** so the gain is shown to be real, not just larger.
-2. **Interpretation** — fits the interpretable model and ranks features by
+2. **Interpretation** fits the interpretable model and ranks features by
    effect size, as odds ratios **with 95% confidence intervals** and direction
    (raises/lowers risk). Numeric features are standardized, so their odds ratios
    are per one standard deviation.
-3. **Stability** — refits on every fold and reports how often each coefficient
+3. **Stability**  refits on every fold and reports how often each coefficient
    keeps its sign, so the interpretation itself is quality-checked.
-4. **Calibration** — checks (out-of-fold) whether predicted probabilities match
+4. **Calibration**  checks (out-of-fold) whether predicted probabilities match
    observed frequencies, with a Brier score and calibration curve, so the
    outputs can be read as real probabilities.
 
 All preprocessing lives inside the sklearn Pipeline, so scaling and encoding are
-refit on training folds only — no leakage into the evaluation. The categorical
+refit on training folds only no leakage into the evaluation. The categorical
 reference category is the first level (alphabetical), dropped by the encoder.
 
 ## Method note
@@ -45,7 +45,7 @@ people-analytics line of work that uses interpretable ML to understand turnover.
 
 ```
 turnover-interpretable/
-├── main.py              # entry point — run this
+├── main.py              # entry point run this
 ├── src/
 │   ├── config.py        # paths, seed, the two feature layers
 │   ├── data.py          # loading + numeric/categorical typing
