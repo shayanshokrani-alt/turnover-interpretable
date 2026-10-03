@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# داده‌ی واقعی را commit نکن (حق‌نشر Kaggle)
+data/*.csv
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
