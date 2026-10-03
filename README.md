@@ -1,4 +1,4 @@
-# Interpretable Turnover Prediction — IBM HR Attrition
+# Interpretable Turnover Prediction - IBM HR Attrition
 
 A small, reproducible people-analytics project asking a focused question on
 real data:
