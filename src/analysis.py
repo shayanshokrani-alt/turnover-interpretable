@@ -3,10 +3,10 @@
 Questions, in order:
   1. Does the experience layer add predictive value over the baseline, and is
      that gain statistically significant (not just numerically larger)?
-  2. Which features drive attrition, in which direction, and how large — each
+  2. Which features drive attrition, in which direction, and how large each
      with a confidence interval, not a bare point estimate?
   3. Are those interpretations stable across folds?
-  4. Are the model's predicted probabilities well calibrated — i.e. can the
+  4. Are the model's predicted probabilities well calibrated i.e. can the
      numbers be read as real probabilities, not just rankings?
 
 All preprocessing lives inside the pipeline, so every number is computed
