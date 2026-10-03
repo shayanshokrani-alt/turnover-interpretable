@@ -4,7 +4,7 @@ __pycache__/
 .venv/
 venv/
 
-# داده‌ی واقعی را commit نکن (حق‌نشر Kaggle)
+
 data/*.csv
 
 # VS Code
