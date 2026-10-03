@@ -1,6 +1,6 @@
 # Interpretable Turnover Prediction - IBM HR Attrition
 
-**Author:** Shayan Shokrani — M.Sc. Computational Biology & Bioinformatics, University of Göttingen
+**Author:** Shayan Shokrani , M.Sc. Computational Biology & Bioinformatics, University of Göttingen
 [GitHub](https://github.com/shayanshokrani-alt)
 
 ---
