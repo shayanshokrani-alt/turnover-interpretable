@@ -61,14 +61,14 @@ turnover-interpretable/
 ## Running it (VS Code, Windows)
 
 1. `File → Open Folder` → select this folder (the whole folder).
-2. Terminal (`` Ctrl+` ``):
+2. Terminal :
    ```
    python -m venv .venv
    .venv\Scripts\activate
    pip install -r requirements.txt
    python main.py
    ```
-   (or just press `F5`).
+  
 
 Figures are written to `outputs/`; the console prints the results tables.
 
